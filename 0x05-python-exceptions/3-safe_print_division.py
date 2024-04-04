@@ -3,9 +3,9 @@
 def safe_print_division(a, b):
     try:
         div = a / b
-        print("{} / {} = {}".format(a, b, div))
-        return
+        return div
     except ZeroDivisionError:
         return None
     finally:
         print("Inside result: {}".format(div))
+        print("{} / {} = {}".format(a, b, div))
