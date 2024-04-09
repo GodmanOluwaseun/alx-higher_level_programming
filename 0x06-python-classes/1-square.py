@@ -2,13 +2,13 @@
 
 """
 0-square
-    This module holds an empty class Square
+    This module containss a class Square
     that defines a square.
 
 """
 
 
 class Square:
-    """Empty class Square that defines a square:"""
+    """Class Square that defines a square of size:"""
     def __init__(self, size):
         self.__size = size
