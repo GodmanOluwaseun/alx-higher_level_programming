@@ -1,11 +1,13 @@
 #!/usr/bin/python3
+
 """
 6-square
     This module containss a class Square
     that defines a square.
 
 Method:
-    area Calculates and returns area of square.
+    area: Calculates and returns area of square.
+    my_print: Prints square to stdout with character #, from position.
 """
 
 
@@ -68,4 +70,4 @@ class Square:
                     print(" ", end="")
                 for j in range(self.__size):
                     print("#", end="")
-                print()
+my_print                print()
