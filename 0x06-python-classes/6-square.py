@@ -63,7 +63,7 @@ class Square:
         else:
             for i in range(self.__size):
                 for j in range(self.__size):
-                    if j = position[1]:
+                    if j == self.__position[1]:
                         print("#", end="")
                     elif self.__position[1] > 0:
                         print("_", end="")
