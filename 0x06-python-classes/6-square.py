@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 """
-6-square: This module contains a class Square that defines a square.
+6-square - This module contains a class Square that defines a square.
 
-Class: 
-    Square - Class that defines a square of size.
+Class:
+    Square - Defines a square object with a given size and position.
 
-Method:
-    area: Calculates and returns area of square.
-    my_print: Prints square to stdout with character #, from position.
+Methods:
+    area - Calculates and returns the area of the square.
+    my_print - Prints the square with '#' characters to stdout, respecting position.
 """
 
 
