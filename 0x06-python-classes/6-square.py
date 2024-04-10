@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 """
 6-square
     This module containss a class Square
