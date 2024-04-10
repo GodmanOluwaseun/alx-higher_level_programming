@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-"""6-square
-    This module contains a class Square
-    that defines a square.
+"""
+6-square
+    This module contains a class Square that defines a square.
 
 Method:
     area: Calculates and returns area of square.
