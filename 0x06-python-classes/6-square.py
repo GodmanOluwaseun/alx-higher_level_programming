@@ -21,7 +21,7 @@ class Square:
         if not isinstance(position[0], int) or \
                 not isinstance(position[1], int):
                     raise TypeError("position must be a tuple of 2 \
-                            positive integers")
+positive integers")
         self.__position = position
 
     @property
@@ -49,7 +49,7 @@ class Square:
         if not isinstance(value[0], int) or \
                 not isinstance(value[1], int):
                     raise TypeError("position must be a tuple of 2 \
-                            positive integers")
+positive integers")
         self.__position = value
 
     def area(self):
