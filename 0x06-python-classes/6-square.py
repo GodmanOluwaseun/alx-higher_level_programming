@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""
-6-square:
+"""6-square
     This module contains a class Square
     that defines a square.
 
