@@ -20,7 +20,7 @@ class Square:
 
         if not isinstance(position[0], int) or \
                 not isinstance(position[1], int) or \
-                len(position) != 2 or position[0] < 0 or position[1] <  0:
+                len(position) != 2 or position[0] < 0 or position[1] < 0:
             raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = position
 
@@ -48,7 +48,7 @@ class Square:
         """Sets position attribute"""
         if not isinstance(value[0], int) or \
                 not isinstance(value[1], int) or \
-                len(value) != 2 or value[0] < 0 or value[1] <  0:
+                len(value) != 2 or value[0] < 0 or value[1] < 0:
             raise TypeError("position must be a tuple of 2 positive integers")
         self.__position = value
 
