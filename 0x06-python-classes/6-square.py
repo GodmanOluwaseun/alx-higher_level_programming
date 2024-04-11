@@ -3,14 +3,11 @@
 
 Attributes:
     size (int): Determines length of the square sides, must be +ve int.
-    Position (tupple) Tuple of 2 integers setting the coordinates, +ve int.
+    Position (tupple): Tuple of 2 integers setting the coordinates,
+    it is a +ve int.
 
 Class:
     Square: Defines a square object with a given size and position.
-
-Properties:
-    size (int)
-    position (tuple)
 
 Getters:
     size gets and returns the size attribute.
@@ -28,9 +25,22 @@ Methods:
 
 
 class Square:
-    """Class Square that defines a square of size:"""
+    """Class Square that defines a square of size
+    Args:
+        arg1 (int): size
+        arg2 (tuple): position
+    Attributes:
+        size (int): length of square
+        position  (tuple): Position to start print from.
+    Functions:
+        __init__(self, size=0, position=(0, 0))
+        area(self)
+        my_print(self)
+    """
     def __init__(self, size=0, position=(0, 0)):
-        """Initializes a square object"""
+        """Initializes a square object
+
+        """
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
         if size < 0:
@@ -72,11 +82,19 @@ class Square:
         self.__position = value
 
     def area(self):
-        """Area returns current square area"""
+        """Area returns current square area.
+
+        Returns:
+            The return value. area of square.
+        """
         return self.__size * self.__size
 
     def my_print(self):
-        """Prints in stdout square with character #"""
+        """Prints in stdout square with character #
+
+        Returns:
+            None
+        """
         if self.__size == 0:
             print()
         else:
