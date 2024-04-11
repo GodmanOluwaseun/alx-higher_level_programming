@@ -1,19 +1,38 @@
 #!/usr/bin/python3
-"""
-6-square - This module contains a class Square that defines a square.
+"""6-square.
+
+This module contains a class Square that defines a square.
+
+Attributes:
+    size (int): Determines length of the square sides, must be +ve int.
+    Position (tupple) Tuple of 2 integers setting the coordinates, +ve int.
 
 Class:
-    Square - Defines a square object with a given size and position.
+    Square: Defines a square object with a given size and position.
+
+Properties:
+    size (int)
+    position (tuple)
+
+Getters:
+    size gets and returns the size attribute.
+    position  returns position attribute
+
+Setters:
+    size.setter sets the value of the size attribute, takes +ve int.
+    position.setter sets value of position, takes tuple of 2 +ve ints.
 
 Methods:
-    area - Calculates and returns the area of the square.
-    my_print - Prints the square with '#' characters to stdout, respecting position.
+    area: Calculates and returns the area of the square.
+    my_print: Prints the square with '#' characters to stdout,
+    using position.
 """
 
 
 class Square:
     """Class Square that defines a square of size:"""
     def __init__(self, size=0, position=(0, 0)):
+        """Initializes a square object"""
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
         if size < 0:
