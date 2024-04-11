@@ -1,8 +1,7 @@
 #!/usr/bin/python3
-
-"""6-square.
-
-This module contains a class Square that defines a square.
+"""
+6-square
+    This module contains a class Square that defines a square.
 
 Attributes:
     size (int): Determines length of the square sides, must be +ve int.
