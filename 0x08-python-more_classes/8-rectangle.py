@@ -54,21 +54,6 @@ class Rectangle:
         else:
             self.__width = value
 
-    @property
-    def height(self):
-        """Getter for height"""
-        return self.__height
-
-    @height.setter
-    def height(self, value):
-        """Setter for height"""
-        if not isinstance(value, int):
-            raise TypeError("height must be an integer")
-        elif value < 0:
-            raise ValueError("height must be >= 0")
-        else:
-            self.__height = value
-
     def area(self):
         """Returns rectangle area"""
         return self.__width * self.__height
@@ -111,7 +96,7 @@ class Rectangle:
         rectangle_1 = rect_1.area()
         rectangle_2 = rect_2.area()
 
-        if rectangle_1 < rectangle_2
+        if rectangle_1 < rectangle_2:
             return rect_2
         else:
             return rect_1
