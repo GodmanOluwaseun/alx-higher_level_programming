@@ -7,7 +7,7 @@ class Rectangle:
     """Class Rectangle that defines a rectangle"""
 
     number_of_instances = 0
-    print_symbol = "#"
+    print_symbol = '#'
 
     def __init__(self, width=0, height=0):
         """Initializes rectangle dimensions"""
@@ -87,7 +87,7 @@ class Rectangle:
         string = ""
         for i in range(self.__height):
             for j in range(self.__width):
-                string += Rectangle.print_symbol
+                string += self.print_symbol
             string += "\n"
         string = string[:-1]
         return string
