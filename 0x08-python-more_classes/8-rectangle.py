@@ -112,6 +112,6 @@ class Rectangle:
         rectangle_2 = rect_2.area()
 
         if rectangle_1 < rectangle_2
-            return rectangle_2
+            return rect_2
         else:
-            return rectangle_1
+            return rect_1
