@@ -34,3 +34,8 @@ Test case example:
     [1, 2, 3, 4, 5]
     >>> print(my_list)
     [1, 4, 2, 3, 5]
+
+Test case with empty list:
+    >>> int_list = MyList()
+    >>> int_list.print_sorted()
+    []
