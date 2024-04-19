@@ -1,11 +1,36 @@
-#!/usr/bin/python3
+Module 1-my_list
+-----------------
 
-from 1-my_list import MyList
+Test cases of MyList
+----------------------
 
-def test_print_sorted():
 
-    int_list = MyList([2, 4, 3, 7, 5])
+Import Module containing MyList:
+    #from 1-my_list import MyList
+    >>> MyList = __import__('1-my_list').MyList
+    
 
-    int_list.print_sorted()
 
-test_print_sorted()
+Test case for positive integers:
+    >>> int_list = MyList([2, 4, 3, 7, 5])
+    >>> int_list.print_sorted()
+    [2, 3, 4, 5, 7]
+
+Test case for mixed negative and positive numbers:
+    >>> int_list = MyList([1, -2, -5, 3, 6, 7, 8])
+    >>> int_list.print_sorted()
+    [-5, -2, 1, 3, 6, 7, 8]
+
+Test case example:
+    >>> my_list = MyList()
+    >>> my_list.append(1)
+    >>> my_list.append(4)
+    >>> my_list.append(2)
+    >>> my_list.append(3)
+    >>> my_list.append(5)
+    >>> print(my_list)
+    [1, 4, 2, 3, 5]
+    >>> my_list.print_sorted()
+    [1, 2, 3, 4, 5]
+    >>> print(my_list)
+    [1, 4, 2, 3, 5]
