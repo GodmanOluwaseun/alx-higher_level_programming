@@ -1,0 +1,11 @@
+#!/usr/bin/python3
+
+from 1-my_list import MyList
+
+def test_print_sorted():
+
+    int_list = MyList([2, 4, 3, 7, 5])
+
+    int_list.print_sorted()
+
+test_print_sorted()
