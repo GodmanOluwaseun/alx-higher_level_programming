@@ -10,6 +10,15 @@ Import 7-base_geometry.py:
     >>> geometry_class = __import__('7-base_geometry').BaseGeometry
     >>> base_g = geometry_class()
 
+Test for area:
+    >>> base_g.area()
+    Traceback (most recent call last):
+    ...
+    Exception: area() is not implemented
+
+Test for integer_validator presence:
+    >>> base_g.integer_validator("age", 1)
+
 Test case for negative number:
     >>> base_g.integer_validator("Age", 0)
     Traceback (most recent call last):
