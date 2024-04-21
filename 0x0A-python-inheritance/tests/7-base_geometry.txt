@@ -1,0 +1,19 @@
+Module 7-base_geometry
+------------------------
+
+Test cases for integer_validator
+__________________________________
+
+Importing 7-base_geometry.py:
+    #from 7-base_geometry.py import integer_validator
+    >>> geometry_class = __import__('7-base_geometry.py').integer_validator
+
+Test case for negative number:
+    >>> value = -6
+    >>> geometry_class.integer_validator(age, value)
+    [ValueError] age must be greater than 0
+
+Test case for wrong value:
+    >>> value = "str"
+    >>> geometry_class.integer_validator(age, value)
+    [TypeError] name must be an integer
