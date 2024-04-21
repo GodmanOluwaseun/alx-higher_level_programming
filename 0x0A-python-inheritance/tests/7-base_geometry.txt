@@ -4,16 +4,20 @@ Module 7-base_geometry
 Test cases for integer_validator
 __________________________________
 
-Importing 7-base_geometry.py:
-    #from 7-base_geometry.py import integer_validator
-    >>> geometry_class = __import__('7-base_geometry.py').integer_validator
+Import 7-base_geometry.py:
+    #from 7-base_geometry.py import BaseGeometry
+
+    >>> geometry_class = __import__('7-base_geometry').BaseGeometry
+    >>> base_g = geometry_class()
 
 Test case for negative number:
-    >>> value = -6
-    >>> geometry_class.integer_validator(age, value)
-    [ValueError] age must be greater than 0
+    >>> base_g.integer_validator("Age", 0)
+    Traceback (most recent call last):
+    ...
+    ValueError: Age must be greater than 0
 
 Test case for wrong value:
-    >>> value = "str"
-    >>> geometry_class.integer_validator(age, value)
-    [TypeError] name must be an integer
+    >>> base_g.integer_validator("Age", "str")
+    Traceback (most recent call last):
+    ...
+    TypeError: Age must be an integer
