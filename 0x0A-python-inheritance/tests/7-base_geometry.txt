@@ -51,6 +51,9 @@ Test case for list argument:
 
 Test case for bool argument:
     >>> base_g.integer_validator("Age", True)
+    Traceback (most recent call last):
+    ...
+    TypeError: bool must be an integer
 
 Test case for dictionary argument:
     >>> base_g.integer_validator("Age", {3, 5, 7})
