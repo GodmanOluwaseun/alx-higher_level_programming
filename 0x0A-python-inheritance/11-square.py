@@ -22,5 +22,5 @@ class Square(Rectangle):
         """Str method"""
         width = str(self.__size)
         height = str(self.__size)
-        string = f"[Rectangle] {width}/{height}"
+        string = f"[Square] {width}/{height}"
         return string
