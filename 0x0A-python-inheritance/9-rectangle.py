@@ -5,19 +5,7 @@ A base geometry, and rectangle class.
 """
 
 
-class BaseGeometry:
-    """Geometry class"""
-
-    def area(self):
-        """Area method that raises exception"""
-        raise Exception("area() is not implemented")
-
-    def integer_validator(self, name, value):
-        """Methodi that validates value"""
-        if not isinstance(value, int):
-            raise TypeError("{} must be an integer".format(name))
-        elif value <= 0:
-            raise ValueError("{} must be greater than 0".format(name))
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
 class Rectangle(BaseGeometry):
@@ -27,3 +15,14 @@ class Rectangle(BaseGeometry):
         self.integer_validator("height", height)
         self.__width = width
         self.__height = height
+
+    def area(self):
+        """Method that returns area of rectangle"""
+        return self.__width * self.__height
+
+    def __str__(self):
+        """Str method"""
+        width = str(self.__width)
+        height = str(self.__height)
+        string = f"[Rectangle] {width}/{height}"
+        return string
