@@ -1,3 +1,3 @@
 -- Computes avg score of records.
-SELECT AVG(score)
+SELECT average(AVG(`score`))
 FROM second_table;
