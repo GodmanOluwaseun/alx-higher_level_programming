@@ -11,7 +11,7 @@ function arraylength (arr) {
 
 const { argv } = require('node:process');
 
-let length = arraylength(argv);
+const length = arraylength(argv);
 
 if (length <= 2) {
   console.log('No argument');
