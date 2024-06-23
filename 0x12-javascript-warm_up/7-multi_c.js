@@ -8,7 +8,7 @@ if (argv.length <= 2 || isNaN(Number(argv[2]))) {
 } else {
   const count = Number(argv[2]);
   if (count < 0) {
-    return;
+    process.exit();
   }
   for (let i = 0; i < count; i++) {
       console.log(str);
