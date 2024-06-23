@@ -11,6 +11,6 @@ if (argv.length <= 2 || isNaN(Number(argv[2]))) {
     process.exit();
   }
   for (let i = 0; i < count; i++) {
-      console.log(str);
+    console.log(str);
   }
 }
