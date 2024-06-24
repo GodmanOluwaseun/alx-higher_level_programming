@@ -2,19 +2,20 @@
 
 const { argv } = require('node:process');
 
-if (argv[2] <= 2 || isNaN(Number(argv[2]))) {
+if (argv.length <= 2 || isNaN(Number(argv[2]))) {
   console.log('Missing size');
 }
 
-const size = argv[2];
+const size = (Number(argv[2]));
 
 if (size < 0) {
   process.exit();
 } else {
   for (let i = 0; i < size; i++) {
+    let row = '';
     for (let j = 0; j < size; j++) {
-      console.log('X');
+      row += 'X';
     }
-    console.log('');
+    console.log(row);
   }
 }
