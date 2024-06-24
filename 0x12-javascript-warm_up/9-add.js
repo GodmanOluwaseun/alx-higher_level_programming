@@ -7,10 +7,10 @@ function add (a, b) {
     console.log(NaN);
     process.exit();
   } else {
-      a = Number(argv[2]);
-      b = Number(argv[3]);
-      const sum = a + b;
-      console.log(sum);
+    a = Number(argv[2]);
+    b = Number(argv[3]);
+    const sum = a + b;
+    console.log(sum);
   }
 }
 
