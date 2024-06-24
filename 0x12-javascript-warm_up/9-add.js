@@ -3,10 +3,10 @@
 const { argv } = require('node:process');
 
 if (argv.length <= 3) {
-  console.log(NaN);
+  process.exit();
 }
 
-function add(a, b) {
+function add (a, b) {
   a = Number(argv[2]);
   b = Number(argv[3]);
   const sum = a + b;
