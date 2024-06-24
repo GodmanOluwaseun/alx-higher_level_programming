@@ -3,6 +3,7 @@
 const { argv } = require('node:process');
 
 if (argv.length <= 3) {
+  return (NaN);
   process.exit();
 }
 
