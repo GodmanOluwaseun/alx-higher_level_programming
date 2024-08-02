@@ -2,7 +2,7 @@
 
 const request = require('request');
 const url = process.argv[2];
-const id = 'https://swapi-api.alx-tools.com/api/people/18/';
+const id = '18';
 
 request(url, (err, response, body) => {
   if (err) {
@@ -12,7 +12,7 @@ request(url, (err, response, body) => {
     let count = 0;
     for (const film of data) {
       for (const character of film.characters) {
-        if (character === id) {
+        if (character.includes(id)) {
           count++;
         }
       }
