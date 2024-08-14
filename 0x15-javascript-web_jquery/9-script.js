@@ -1,7 +1,9 @@
-const url = 'https://hellosalut.stefanbohacek.dev/?lang=fr';
+$(document).ready(function() {
+  const url = 'https://hellosalut.stefanbohacek.dev/?lang=fr';
 
-$.getJSON(url, function(data) {
-  $('#hello').text(data.hello);
-}).fail(function() {
-  console.error('Error');
+  $.getJSON(url, function(data) {
+    $('#hello').text(data.hello);
+  }).fail(function() {
+    console.error('Error');
+  });
 });
